@@ -1,0 +1,184 @@
+{
+  "siteInfo": {
+    "name": "CyberSecure",
+    "tagline": "Your hub for cybersecurity learning and resources",
+    "year": "2025"
+  },
+  "topics": [
+    "Network Security",
+    "Web Security",
+    "Forensics",
+    "Malware"
+  ],
+  "tools": [
+    "Wireshark",
+    "Burp Suite",
+    "Autopsy",
+    "Ghidra"
+  ],
+  "announcements": [
+    "New tutorial on malware analysis!",
+    "Join our October CTF Challenge.",
+    "Updated Wireshark guide released."
+  ],
+  "quickLinks": [
+    { "name": "TryHackMe", "url": "https://tryhackme.com" },
+    { "name": "Hack The Box", "url": "https://hackthebox.com" },
+    { "name": "OWASP Top 10", "url": "https://owasp.org/www-project-top-ten/" }
+  ],
+  "recentArticles": [
+    {
+      "id": 1,
+      "title": "Phishing Detection 101",
+      "category": "Web Security",
+      "date": "Sept 2025",
+      "description": "Learn the fundamentals of identifying and preventing phishing attacks."
+    },
+    {
+      "id": 2,
+      "title": "Network Forensics Intro",
+      "category": "Forensics",
+      "date": "Aug 2025",
+      "description": "Introduction to capturing and analyzing network traffic for investigations."
+    },
+    {
+      "id": 3,
+      "title": "Reverse Engineering Basics",
+      "category": "Malware",
+      "date": "July 2025",
+      "description": "Getting started with malware reverse engineering techniques."
+    },
+    {
+      "id": 4,
+      "title": "Intro to Packet Sniffing",
+      "category": "Network",
+      "date": "Sept 2025",
+      "description": "Understanding how to capture and analyze network packets."
+    },
+    {
+      "id": 5,
+      "title": "SQL Injection Guide",
+      "category": "Web",
+      "date": "Aug 2025",
+      "description": "Comprehensive guide to SQL injection attacks and prevention."
+    },
+    {
+      "id": 6,
+      "title": "Memory Forensics",
+      "category": "Forensics",
+      "date": "July 2025",
+      "description": "Analyzing volatile memory for forensic investigations."
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Training",
+      "description": "Workshops, CTFs, and guided tutorials to enhance your skills.",
+      "icon": "🎓"
+    },
+    {
+      "id": 2,
+      "name": "Consulting",
+      "description": "Security assessments and guidance for your projects.",
+      "icon": "💼"
+    },
+    {
+      "id": 3,
+      "name": "Auditing",
+      "description": "Comprehensive security audits for your infrastructure.",
+      "icon": "🔍"
+    }
+  ],
+  "servicePackages": [
+    {
+      "service": "Basic Workshop",
+      "duration": "2 Days",
+      "price": "$99"
+    },
+    {
+      "service": "Advanced Training",
+      "duration": "1 Week",
+      "price": "$299"
+    },
+    {
+      "service": "Consulting Package",
+      "duration": "1 Month",
+      "price": "$499"
+    }
+  ],
+  "aboutInfo": {
+    "mission": "CyberSecure is dedicated to providing resources and knowledge to strengthen your cybersecurity skills. We focus on hands-on learning and real-world scenarios.",
+    "quote": "The best defense is an informed mind.",
+    "founded": "2024",
+    "focusAreas": "Security Education, Research, and Tools",
+    "community": "Global Network of Learners"
+  },
+  "galleryImages": [
+    {
+      "id": 1,
+      "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=300&h=200&fit=crop",
+      "alt": "Cybersecurity Workshop",
+      "category": "Events"
+    },
+    {
+      "id": 2,
+      "url": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=300&h=200&fit=crop",
+      "alt": "Network Security Lab",
+      "category": "Workshops"
+    },
+    {
+      "id": 3,
+      "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300&h=200&fit=crop",
+      "alt": "CTF Competition",
+      "category": "CTFs"
+    },
+    {
+      "id": 4,
+      "url": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=300&h=200&fit=crop",
+      "alt": "Coding Workshop",
+      "category": "Events"
+    },
+    {
+      "id": 5,
+      "url": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=300&h=200&fit=crop",
+      "alt": "Security Conference",
+      "category": "Events"
+    },
+    {
+      "id": 6,
+      "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=200&fit=crop",
+      "alt": "Team Collaboration",
+      "category": "Workshops"
+    }
+  ],
+  "categories": [
+    "All",
+    "Network",
+    "Web",
+    "Forensics",
+    "Malware",
+    "Threats"
+  ],
+  "sidebarLinks": {
+    "home": {
+      "topics": ["Network Security", "Web Security", "Forensics", "Malware"],
+      "tools": ["Wireshark", "Burp Suite", "Autopsy", "Ghidra"]
+    },
+    "about": {
+      "sections": ["Mission", "Vision", "Team"]
+    },
+    "articles": {
+      "categories": ["Threats", "Malware", "Forensics", "Web"]
+    },
+    "services": {
+      "offerings": ["Training", "Consulting", "Auditing"]
+    },
+    "contact": {
+      "methods": ["Email", "Phone", "Community"]
+    },
+    "gallery": {
+      "types": ["Events", "Workshops", "CTFs"]
+    }
+  }
+}
