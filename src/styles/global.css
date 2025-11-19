@@ -1,4 +1,4 @@
-/* Global styles copy (plain CSS) to ensure styles load in dev/CRA without CSS module complexity */
+/* Global Styles */
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@ html, body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Theme (Default) */
+/* Dark Theme */
 body.dark {
   background-color: #121212;
   color: #f5f5f5;
@@ -246,7 +246,7 @@ main {
   transform: scale(1.02);
 }
 
-/* Form Styles (truncated for brevity) */
+/* Form Styles */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -279,7 +279,6 @@ form {
   transition: all 0.3s;
 }
 
-/* Small badge utility */
 .badge {
   display: inline-block;
   padding: 6px 10px;

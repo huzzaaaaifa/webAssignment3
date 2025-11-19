@@ -2,23 +2,13 @@ import React, { useState } from 'react';
 import Sidebar from '../components/Sidebar';
 import contentData from '../data/content.json';
 
-/* ========================================
-   ASSIGNMENT REQUIREMENTS SATISFIED:
-   ========================================
-   TASK 2: GitHub Search Implementation
-   Public API: GitHub Search API integration
-   React Hooks: useState
-   ======================================== */
-
+// GitHub user search with API
 function GitHubSearch() {
-  // 1. React Hooks (useState)
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // 2. TASK 2 - GitHub Search API integration
-  // 3. Public API - Fetch GitHub users
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!query.trim()) return;
@@ -27,7 +17,7 @@ function GitHubSearch() {
     setResults([]);
 
     try {
-      // GitHub Search API - free public API
+      // GitHub API call
       const res = await fetch(`https://api.github.com/search/users?q=${encodeURIComponent(query)}&per_page=12`);
       if (!res.ok) throw new Error(`GitHub API: ${res.status}`);
       const data = await res.json();

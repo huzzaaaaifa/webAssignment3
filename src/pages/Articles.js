@@ -3,30 +3,18 @@ import Sidebar from '../components/Sidebar';
 import contentData from '../data/content.json';
 import ArticleCard from '../components/ArticleCard';
 
-/* ========================================
-   ASSIGNMENT REQUIREMENTS SATISFIED:
-   ========================================
-   1. React Hooks: useState, useEffect
-   2. Public API: JSONPlaceholder API fetch
-   3. Local JSON: content.json loaded
-   ======================================== */
-
+// Articles page with API integration
 function Articles() {
-  // 1. React Hooks (useState)
   const [articles, setArticles] = useState([]);
   const [apiArticles, setApiArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // 2. React Hooks (useEffect) + Local JSON loading
   useEffect(() => {
-    // 3. Local JSON - Load articles from content.json
     setArticles(contentData.recentArticles);
     fetchCyberSecurityNews();
   }, []);
-
-  // 3. Public API integration - Fetch from JSONPlaceholder
   const fetchCyberSecurityNews = async () => {
     try {
       setLoading(true);
@@ -70,7 +58,6 @@ function Articles() {
       <main className="fade-in">
         <h2>📰 Latest Articles</h2>
         
-        {/* Search and Filter (inline) */}
         <div className="search-filter-container">
           <div className="search-bar">
             <input

@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
-// Firebase configuration
+// Firebase configuration and service
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -11,7 +11,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
-// Initialize Firebase
 let app;
 let db;
 
@@ -22,11 +21,9 @@ try {
   console.warn('Firebase initialization failed. Using fallback mode.', error.message);
 }
 
-// Function to submit contact form
 export const submitContactForm = async (formData) => {
   try {
     if (!db) {
-      // Fallback: Store in localStorage if Firebase is not configured (browser only)
       if (typeof window !== 'undefined' && window.localStorage) {
         const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
         submissions.push({

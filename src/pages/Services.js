@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import contentData from '../data/content.json';
 
+// Services page with offerings and pricing
 function Services() {
   return (
     <div className="page-container">

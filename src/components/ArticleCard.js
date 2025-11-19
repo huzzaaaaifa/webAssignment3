@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Article display card component
 function ArticleCard({ article }) {
   return (
     <div className="api-article-card">

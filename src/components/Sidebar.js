@@ -1,8 +1,6 @@
 import React from 'react';
 
-// Simplified Sidebar: accepts either an array of items or an object where
-// each key is a section title and the value is an array of items.
-// This keeps usage flexible while keeping the component small.
+// Flexible sidebar component
 function Sidebar({ items, title }) {
   if (!items) return null;
 

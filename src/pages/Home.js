@@ -2,13 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import contentData from '../data/content.json';
 
-/* ========================================
-   ASSIGNMENT REQUIREMENTS SATISFIED:
-   ========================================
-    Local JSON: content.json loaded
-    Video Embed: YouTube iframe below
-   ======================================== */
-
+// Main homepage with dashboard content
 function Home() {
   return (
     <div className="page-container">
@@ -19,7 +13,6 @@ function Home() {
       />
       <main className="fade-in">
         <div className="hero">
-          {/* Local JSON - Site info loaded from content.json */}
           <h2>Welcome to {contentData.siteInfo.name}</h2>
           <p>{contentData.siteInfo.tagline}</p>
         </div>
@@ -27,7 +20,6 @@ function Home() {
         <div className="content-row">
           <div className="content-box">
             <h3>Announcements</h3>
-            {/* Local JSON - Announcements from content.json */}
             <ul>
               {contentData.announcements.map((announcement, index) => (
                 <li key={index}>{announcement}</li>
@@ -36,7 +28,6 @@ function Home() {
           </div>
           <div className="content-box">
             <h3>Quick Links</h3>
-            {/* Local JSON - Quick links from content.json */}
             <ul>
               {contentData.quickLinks.map((link, index) => (
                 <li key={index}>
@@ -51,7 +42,6 @@ function Home() {
 
         <div className="table-section">
           <h3>Recent Articles</h3>
-          {/* Local JSON - Articles from content.json */}
           <table>
             <thead>
               <tr>
@@ -79,7 +69,6 @@ function Home() {
           </p>
         </div>
         
-        {/* Video Embed - YouTube iframe */}
         <div className="content-box" style={{ marginTop: 20 }}>
           <h3>Introduction Video</h3>
           <div style={{ position: 'relative', paddingTop: '56.25%' }}>

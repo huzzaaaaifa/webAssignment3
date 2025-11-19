@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 
-/* 
-   AI Chat: DeepSeek API integration via OpenRouter
-   Public API: AI model API integration
-   React Hooks: useState
-*/
-
+// AI chat with DeepSeek API
 function AIChat() {
-  // 1. React Hooks (useState)
   const [prompt, setPrompt] = useState('');
   const [responses, setResponses] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // 2. AI Chat + Public API - DeepSeek via OpenRouter API
+  // Call DeepSeek API
   const callDeepSeek = async (text) => {
     const key = process.env.REACT_APP_DEEPSEEK_API_KEY;
     console.log('API Key present?', !!key);
@@ -85,7 +79,6 @@ function AIChat() {
     if (aiReply) {
       setResponses(prev => [...prev, { role: 'ai', text: aiReply }]);
     } else {
-      // canned fallback reply
       setResponses(prev => [...prev, { role: 'ai', text: "Sorry — I don't have an API key configured. Try setting REACT_APP_DEEPSEEK_API_KEY in your .env to enable real responses." }]);
     }
 

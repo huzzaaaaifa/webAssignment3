@@ -1,7 +1,7 @@
 import React from 'react';
 
+// Responsive video embed component
 function VideoPlayer({ src, title = 'Video' }) {
-  // src can be a YouTube embed URL or a local /assets path
   return (
     <div style={{ position: 'relative', paddingTop: '56.25%' }}>
       <iframe

@@ -3,16 +3,8 @@ import Sidebar from '../components/Sidebar';
 import contentData from '../data/content.json';
 import { submitContactForm } from '../services/firebase';
 
-/* ========================================
-   ASSIGNMENT REQUIREMENTS SATISFIED:
-   ========================================
-   1. React Hooks: useState
-   2. Firebase Integration: Form submission to Firestore
-   3. localStorage Fallback: If Firebase unavailable
-   ======================================== */
-
+// Contact form with Firebase integration
 function Contact() {
-  // 1. React Hooks (useState)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -35,7 +27,6 @@ function Contact() {
     setStatus({ type: '', message: '' });
 
     try {
-      // submitContactForm uses Firebase Firestore or localStorage as fallback
       const result = await submitContactForm(formData);
       
       if (result.success) {

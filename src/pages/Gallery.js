@@ -5,7 +5,7 @@ import contentData from '../data/content.json';
 function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  // Filter images based on selected category
+  // Filter by category
   const filteredImages = selectedCategory === 'All' 
     ? contentData.galleryImages 
     : contentData.galleryImages.filter(img => img.category === selectedCategory);
@@ -19,7 +19,6 @@ function Gallery() {
       <main className="fade-in">
         <h2>🖼️ Event Highlights</h2>
         
-        {/* Category Filter */}
         <div className="search-filter-container">
           <div className="filter-dropdown">
             <label htmlFor="category-filter" style={{ marginRight: '10px' }}>
@@ -38,7 +37,6 @@ function Gallery() {
           </div>
         </div>
 
-        {/* Gallery Grid */}
         <div className="gallery">
           {filteredImages.map((image) => (
             <div key={image.id} className="gallery-item">

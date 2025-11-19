@@ -1,6 +1,7 @@
 import React from 'react';
 import contentData from '../data/content.json';
 
+// Simple footer component
 function Footer() {
   return (
     <footer>

@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 import contentData from '../data/content.json';
 
+// About page with company information
 function About() {
   return (
     <div className="page-container">

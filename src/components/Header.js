@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import contentData from '../data/content.json';
 
+// Navigation header with theme toggle
 function Header({ theme, toggleTheme }) {
   return (
     <header>
