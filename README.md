@@ -59,7 +59,7 @@ A modern, responsive web application built with React for cybersecurity educatio
 *Contact form with Firebase Firestore integration and localStorage fallback.*
 
 #### Services Page
-![Services Page - Full Screen](./screenshots/services-page.png)
+![Services Page - Full Screen](./screenshots/services.png)
 *Overview of cybersecurity training courses and services offered.*
 
 #### Gallery Page
